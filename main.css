@@ -1,0 +1,47 @@
+/*Primeira Imagem*/
+.instagram{
+    margin-top: 90px;
+    margin-left: 80px;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle at 30% 107%,
+    #fdf497 0%, #fdf497 15%, #fd5949 45%, 
+    #d6249f 60%, #285aeb 110%);
+    border-radius: 35px;
+    display: grid;
+    place-items: center;
+}
+
+/*Segunda Imagem*/
+.caixainterna{
+    width: 100px;
+    height: 100px;
+    border: 10px solid #fff;
+    border-radius: 32px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+/*Terceira Imagem*/
+.caixainterna::before{
+    content: '';
+    width: 45px;
+    height: 45px;
+    border: 10px solid #fff;
+    border-radius: 50%;
+    background: transparent;
+    position: absolute;
+}
+/*Terceira Imagem*/
+.caixainterna::after{
+    content: '';
+    width: 10px;
+    height: 10px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background: #fff;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+
